@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>RB_Soft.AspNetWebApi</RootNamespace>
+    <StartupObject>RB_Soft.AspNetWebApi.Program</StartupObject>
   </PropertyGroup>
 
 

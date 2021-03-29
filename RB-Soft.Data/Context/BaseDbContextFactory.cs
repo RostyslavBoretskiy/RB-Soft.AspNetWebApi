@@ -20,7 +20,7 @@ namespace RB_Soft.Data.Context
 
         public TContext CreateDbContext(string[] args)
         {
-            return Create(@$"{Directory.GetCurrentDirectory()}\..\Web.Api\",
+            return Create(@$"{Directory.GetCurrentDirectory()}\..\RB-Soft.AspNetWebApi\",
                 Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"),
                 ConnectionStringName, MigrationsAssemblyName);
         }

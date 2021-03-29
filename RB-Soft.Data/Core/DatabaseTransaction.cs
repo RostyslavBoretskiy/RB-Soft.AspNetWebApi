@@ -1,4 +1,4 @@
-﻿using bARTSolution.Domain.Data.Context;
+﻿using RB_Soft.Data.Context;
 
 namespace RB_Soft.Data.Core
 {
