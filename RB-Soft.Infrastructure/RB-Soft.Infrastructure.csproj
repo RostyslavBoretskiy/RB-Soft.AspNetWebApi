@@ -5,4 +5,17 @@
     <RootNamespace>RB_Soft.Infrastructure</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RB-Soft.Data\RB-Soft.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapper\Profiles\" />
+    <Folder Include="Repositories\Implementation\" />
+  </ItemGroup>
+
 </Project>

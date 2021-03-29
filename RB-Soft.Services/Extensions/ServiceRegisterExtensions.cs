@@ -1,14 +1,11 @@
 ﻿using AutoMapper;
 
-using bARTSolution.Domain.Infrastructure.Extensions;
-using bARTSolution.Domain.Infrastructure.Mapper;
-using bARTSolution.Domain.Services;
-using bARTSolution.Domain.Services.Implementation;
-using bARTSolutionWeb.Domain.Services.Mapper.Profiles;
-
 using Microsoft.Extensions.DependencyInjection;
 
-namespace bARTSolutionWeb.Domain.Services.Extensions
+using RB_Soft.Infrastructure.Extensions;
+using RB_Soft.Infrastructure.Mapper;
+
+namespace RB_Soft.Services.Extensions
 {
     public static class ServiceRegisterExtensions
     {
@@ -16,10 +13,7 @@ namespace bARTSolutionWeb.Domain.Services.Extensions
         {
             services.ConfigureRepositories();
 
-            services.AddTransient<ITransactionService, TransactionService>();
-            services.AddTransient<IContactService, ContactService>();
-            services.AddTransient<IAccountService, AccountService>();
-            services.AddTransient<IIncidentService, IncidentService>();
+            //services.AddTransient<ITransactionService, TransactionService>();
 
             services.AddMapper();
 
@@ -33,9 +27,7 @@ namespace bARTSolutionWeb.Domain.Services.Extensions
             var config = new MapperConfiguration(cfg =>
             {
                 dataProfiles.ForEach(p => cfg.AddProfile(p));
-                cfg.AddProfile(new IncidentModelProfile());
-                cfg.AddProfile(new AccountModelProfile());
-                cfg.AddProfile(new ContactModelProfile());
+                //cfg.AddProfile(new IncidentModelProfile());
             });
 
             var mapper = config.CreateMapper();

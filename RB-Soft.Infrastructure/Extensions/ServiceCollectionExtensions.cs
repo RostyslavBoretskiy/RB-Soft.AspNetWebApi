@@ -1,10 +1,10 @@
-﻿using bARTSolution.Domain.Data.Context;
-using bARTSolution.Domain.Infrastructure.Extensions.Services;
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace bARTSolution.Domain.Infrastructure.Extensions
+using RB_Soft.Data.Context;
+using RB_Soft.Infrastructure.Extensions.Services;
+
+namespace RB_Soft.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtensions
 	{

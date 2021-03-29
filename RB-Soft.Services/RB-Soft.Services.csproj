@@ -5,4 +5,13 @@
     <RootNamespace>RB_Soft.Services</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RB-Soft.Infrastructure\RB-Soft.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapper\Profiles\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

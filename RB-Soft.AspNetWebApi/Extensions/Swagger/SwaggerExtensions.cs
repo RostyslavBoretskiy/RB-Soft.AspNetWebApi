@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace bARTSolution.Web.Api.Extensions.Swagger
+namespace RB_Soft.AspNetWebApi.Extensions.Swagger
 {
     /// <summary>
     /// SwaggerExtensions

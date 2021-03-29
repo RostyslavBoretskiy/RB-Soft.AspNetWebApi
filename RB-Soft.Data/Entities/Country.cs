@@ -2,11 +2,9 @@
 
 namespace RB_Soft.Data.Entities
 {
-    public class Brand
+    public class Country
     {
-        public int BrandId { get; set; }
-
-        [Required]
+        [Key]
         public string Name { get; set; }
     }
 }

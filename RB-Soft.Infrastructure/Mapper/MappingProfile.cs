@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
 
-using bARTSolution.Domain.Infrastructure.Mapper.Profiles;
-
 using System.Collections.Generic;
 
-namespace bARTSolution.Domain.Infrastructure.Mapper
+namespace RB_Soft.Infrastructure.Mapper
 {
     public static class MappingProfile
     {
@@ -12,9 +10,7 @@ namespace bARTSolution.Domain.Infrastructure.Mapper
         {
             var profiles = new List<Profile>();
 
-            profiles.Add(new IncidentProfile());
-            profiles.Add(new AccountProfile());
-            profiles.Add(new ContactProfile());
+            //profiles.Add(new IncidentProfile());
 
             return profiles;
         }

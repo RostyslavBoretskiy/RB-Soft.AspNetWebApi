@@ -1,11 +1,8 @@
-﻿using bARTSolution.Domain.Data.Context;
-using bARTSolution.Domain.Data.Core;
-using bARTSolution.Domain.Infrastructure.Repositories;
-using bARTSolution.Domain.Infrastructure.Repositories.Implementation;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-using Microsoft.Extensions.DependencyInjection;
+using RB_Soft.Data.Core;
 
-namespace bARTSolution.Domain.Infrastructure.Extensions.Services
+namespace RB_Soft.Infrastructure.Extensions.Services
 {
     internal static class DependencyExtensions
 	{
@@ -16,9 +13,9 @@ namespace bARTSolution.Domain.Infrastructure.Extensions.Services
 			services.AddScoped<IDatabaseTransaction, DatabaseTransaction>();
 			services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
-			services.AddScoped<IContactRepository, ContactRepository>();
-			services.AddScoped<IAccountRepository, AccountRepository>();
-			services.AddScoped<IIncidentRepository, IncidentRepository>();
+			//services.AddScoped<IContactRepository, ContactRepository>();
+			//services.AddScoped<IAccountRepository, AccountRepository>();
+			//services.AddScoped<IIncidentRepository, IncidentRepository>();
 
 			return services;
 		}

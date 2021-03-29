@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace bARTSolution.Domain.Infrastructure.Models
+namespace RB_Soft.Infrastructure.Models
 {
     public class ResultModel
     {
